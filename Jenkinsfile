@@ -1,6 +1,6 @@
 pipeline {
 
-    agent any
+    agent { label "do-not-use-master" }
 
     stages {
         stage('Run Parallel Tests') {
